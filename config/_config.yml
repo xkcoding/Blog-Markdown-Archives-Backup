@@ -25,9 +25,21 @@ search:
   format: html
   limit: 10000
 
+algolia:
+  applicationID: 'ZV4RFZVZ58'
+  apiKey: 'ad1e0a485cd7b9e16a583282fc2843c6'
+  adminApiKey: '20fee041cebabaa5e9ef6727a101eb4a'
+  indexName: 'xkcoding'
+  chunkSize: 5000
+  fields:
+    - title
+    - slug
+    - path
+    - content:strip
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://cd.xkcoding.com/
+url: http://xkcoding.com/
 root: /
 permalink: :year/:month/:day/:title.html
 permalink_defaults: 
